@@ -1,167 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ruan Rodrigues | Backend Developer</title>
-    <link rel="icon" href="data:image/svg+xml,
-        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
-        <text y='.9em' font-size='90'>💻</text>
-        </svg>">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="asserts/favicon.png" type="image/x-icon">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- Devicons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <title>Ruan Rodrigues | Developer</title>
 </head>
 
 <body>
 
     <!-- HEADER -->
-    <header class="profile-header">
-        <div class="profile-image">
-            <img src="assets/profile.jpg" alt="Ruan Rodrigues">
-        </div>
+    <header>
+        <div class="interface">
 
-        <div class="profile-info">
-            <h1>👨‍💻 Ruan Rodrigues</h1>
-            <h2>💻 Backend Developer</h2>
+            <div class="logo">
+                <a href="#home">
+                    <img id="logo" src="asserts/logo.png" alt="Ruan Rodrigues Logo">
+                </a>
+            </div>
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contact">
+                <a href="#contact">
+                    <button>Contact</button>
+                </a>
+            </div>
+
         </div>
     </header>
 
+
     <main>
 
-        <!-- ABOUT -->
-        <section class="card" id="about">
-            <h3>About Me</h3>
-            <p>
-                I am studying Computer Science, with the aim of qualifying myself as an excellent professional
-                in the field of Software Development. Although I'm still at the beginning of my journey,
-                I have skills in Java and Python, and I'm always looking to improve my skills.
-            </p>
-            <p>
-                I constantly seek to improve myself and find opportunities to demonstrate my competence by
-                participating in challenging and revolutionary projects. I appreciate a cooperative and
-                dynamic work environment, where I can acquire knowledge from other professionals and contribute
-                to the growth of teams.
-            </p>
+        <!-- HOME -->
+        <section id="home" class="hero">
+            <div class="interface">
+
+                <div class="hero-content">
+
+                    <span class="greeting">Hello, I'm</span>
+
+                    <h1>
+                        Ruan Rodrigues
+                    </h1>
+
+                    <h2>
+                        Full Stack Developer
+                    </h2>
+
+                    <p>
+                        Computer Science student passionate about
+                        software development, backend systems and AI
+                        Researche.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects">
+                            <button class="btn-primary">
+                                View Projects
+                            </button>
+                        </a>
+
+                        <a href="#contact">
+                            <button class="btn-secondary">
+                                Contact Me
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="profile-image">
+                    <img
+                        id="profile"
+                        src="asserts/profile.jpg"
+                        alt="Ruan Rodrigues"
+                    >
+                </div>
+
+            </div>
         </section>
+
 
         <!-- EXPERIENCE -->
-        <section class="card" id="experience">
-            <h3>💼 Experience</h3>
+        <section id="experience" class="section">
+            <div class="interface">
 
-            <div class="experience">
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h4>LACINA – UFCG</h4>
-                        <span>Nov 2025 – Present</span>
+                <div class="section-title">
+                    <h2>Experience</h2>
+                </div>
+
+                <div class="experience-content">
+
+                   <div class="experience-item">
+
+                        <h3>Software Developer</h3>
+
+                        <span class="experience-date">
+                            LACINA · Dell Technologies Partnership · Nov 2025 - Present
+                        </span>
+
+                        <p>
+                            Designed and developed an AI-powered chatbot from scratch
+                            using LangGraph and FastAPI, with a focus on agent-based
+                            architectures and conversational workflows.
+                        </p>
+
+                        <p>
+                            Implemented Redis for caching and session state management,
+                            reducing system response latency by 70%. Designed and
+                            implemented an advanced RAG pipeline using HyDE to improve
+                            document retrieval and provide more relevant context to LLMs,
+                            including the development of benchmarks to evaluate its
+                            effectiveness.
+                        </p>
+
+                        <p>
+                            Currently developing an autonomous multi-agent ecosystem
+                            focused on analyzing codebases and automatically identifying
+                            and addressing software security vulnerabilities.
+                        </p>
+
                     </div>
 
-                    <p class="experience-role">
-                        Software Developer (Project in partnership with DELL)
-                    </p>
 
-                    <p class="experience-description">
-                        Participation in a research and development project at LACINA (Laboratório de
-                        Computação Inteligente e Aplicada) – UFCG, in partnership with DELL. Acting in the
-                        development of backend solutions, applying good software engineering practices,
-                        teamwork and continuous learning in a professional environment.
-                    </p>
+                    <div class="experience-item">
+
+                        <h3>Academic Teaching Assistant</h3>
+
+                        <span class="experience-date">
+                            UFCG · Jul 2024 - Aug 2026
+                        </span>
+
+                        <p>
+                            Supported students across courses including Databases I,
+                            Data Structures and Algorithms, Programming II, and
+                            Introduction to Computer Science.
+                        </p>
+
+                        <p>
+                            Conducted practical sessions, reviewed programming projects,
+                            developed automated tests, and provided technical feedback
+                            on algorithms, data structures, object-oriented programming,
+                            SQL, PostgreSQL, and Python.
+                        </p>
+
+                    </div>
+
                 </div>
+
             </div>
         </section>
+
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <div class="interface">
+
+                <div class="section-title">
+                    <h2>About Me</h2>
+                </div>
+
+                <div class="about-content">
+
+                    <div class="about-text">
+                        <p>
+                            I'm a Computer Science student interested in
+                            building reliable and scalable software.
+                        </p>
+
+                        <p>
+                            My main interests are backend development,
+                            software architecture, artificial intelligence
+                            and problem solving.
+                        </p>
+
+                        <p>
+                            I enjoy learning new technologies and turning
+                            ideas into real-world projects.
+                        </p>
+                    </div>
+
+                    <div class="skills">
+
+                        <h3>Technologies</h3>
+
+                        <ul>
+                            <li>Java</li>
+                            <li>Spring Boot</li>
+                            <li>Python</li>
+                            <li>FastAPI</li>
+                            <li>PostgreSQL</li>
+                            <li>Git</li>
+                            <li>Docker</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
 
         <!-- PROJECTS -->
-        <section class="card" id="projects">
-            <h3>🚀 Projects</h3>
+        <section id="projects" class="section">
+            <div class="interface">
 
-            <div class="projects">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <h4>ImobMatch API</h4>
-                    <p>
-                        Backend API for real estate management, with authentication, JWT security,
-                        user roles and PostgreSQL database.
-                    </p>
-                    <div class="project-tech">
-                        <span>Java</span>
-                        <span>Spring Boot</span>
-                        <span>PostgreSQL</span>
-                        <span>S3</span>
-                        <span>Email Client</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/ImobMatch/imobmatch-api" target="_blank">GitHub</a>
-                    </div>
+                <div class="section-title">
+                    <h2>Projects</h2>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <h4>FitMetrics API</h4>
-                    <p>
-                        Web Backend application to manage physical assessments, generate PDF reports
-                        and send reports by email.
-                    </p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>PostgreSQL</span>
-                        <span>PDF</span>
-                        <span>Email Client</span>
-                        <span>Alembic</span>
-                        <span>Async</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/FitMetrics/fitmetrics-api" target="_blank">GitHub</a>
-                    </div>
+                <div class="projects-grid">
+
+                    <article class="project-card">
+
+                        <span class="project-number">
+                            01
+                        </span>
+
+                        <h3>ImobMatch</h3>
+
+                        <p>
+                            Real-estate intermediation platform for
+                            properties, proposals, authorizations and
+                            communication between users.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>PostgreSQL</span>
+                            <span>Docker</span>
+                        </div>
+
+                        <a
+                            href="https://github.com/ImobMatch/imobmatch-api/"
+                            class="project-link"
+                        >
+                            View Project →
+                        </a>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <span class="project-number">
+                            02
+                        </span>
+
+                        <h3>Music Genre Classifier</h3>
+
+                        <p>
+                            Machine learning application for classifying
+                            music genres using audio features and an
+                            MLP neural network.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>FastAPI</span>
+                        </div>
+
+                        <a
+                            href="https://github.com/Ruanrodrigues20/music-genre-classifier"
+                            class="project-link"
+                        >
+                            View Project →
+                        </a>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <span class="project-number">
+                            03
+                        </span>
+
+                        <h3>Fitmetris</h3>
+
+                        <p>
+                            Backend application for managing physical
+                            evaluations and generating structured reports.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>PostgreSQL</span>
+                        </div>
+
+                        <a
+                            href="https://github.com/fitmetrics/fitmetrics-api"
+                            class="project-link"
+                        >
+                            View Project →
+                        </a>
+
+                    </article>
+
                 </div>
+
             </div>
         </section>
 
-        <!-- SKILLS -->
-        <section class="card" id="skills">
-            <h3>🤖 Languages and Tools</h3>
-            <div class="skills">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
-                    alt="Spring Boot" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
-                    alt="PostgreSQL" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-                    alt="MongoDB" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
-                    alt="FastAPI" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" />
-            </div>
-        </section>
 
-        <!-- CONTACTS -->
-        <section class="card" id="contacts">
-            <h3>Contacts</h3>
-            <div class="contacts">
-                <a href="https://www.linkedin.com/in/ruan-rodrigues-317a40292/" target="_blank">
-                    LinkedIn
-                </a>
-                <a href="https://github.com/Ruanrodrigues20/" target="_blank">
-                    Github
-                </a>
-                <a href="mailto:ruan.rodrigues.silva@ccc.ufcg.edu.br">
-                    Gmail
-                </a>
+        <!-- CONTACT -->
+        <section id="contact" class="section contact-section">
+            <div class="interface">
+
+                <div class="section-title">
+                    <h2>Contact</h2>
+                </div>
+
+                <div class="contact-content">
+
+                    <h3>
+                        Let's build something together.
+                    </h3>
+
+                    <p>
+                        Feel free to contact me if you want to discuss
+                        a project, opportunity or just talk about
+                        technology.
+                    </p>
+
+                    <a
+                        href="mailto:ruan.rodrigues.silvaa@gmail.com"
+                        class="email-link"
+                    >
+                        ruan.rodrigues.silvaa@gmail.com
+                    </a>
+
+                    <div class="social-links">
+                        <a href="https://github.com/ruanrodrigues20 " target="_blank">GitHub</a>
+                        <a href="https://www.linkedin.com/in/ruan-rodrigues2/?locale=en" target="_blank">LinkedIn</a>
+                    </div>
+
+                </div>
+
             </div>
         </section>
 
     </main>
 
+
+    <!-- FOOTER -->
     <footer>
-        <p>© 2026 — Ruan Rodrigues</p>
+
+        <div class="interface">
+
+            <div class="footer-logo">
+                <img
+                    src="asserts/logo.png"
+                    alt="Ruan Rodrigues Logo"
+                >
+            </div>
+
+            <p>
+                © 2026 Ruan Rodrigues. All rights reserved.
+            </p>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+        </div>
+
     </footer>
 
-    <script src="script.js"></script>
 </body>
-
 </html>
